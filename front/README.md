@@ -2,14 +2,6 @@
 
 ## Project set up 
 
-  "name": "vidiren",
-  "version": "1.0.1",
-  "main": "main.js",
-  "description": "",
-  "keywords": [],
-  "type": "commonjs",
-
-
 Install npm erbium:
 `nvm install v12.22.12`
 
@@ -19,8 +11,8 @@ Use erbium:
 Install:
 `npm install`
 
-compile typescript files:
-`tsc`
+Run production:
+`npm run prod`
 
 
 # Brand Guide.

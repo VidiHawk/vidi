@@ -1,76 +1,78 @@
-import React from "react";
-import { renderToString } from "react-dom/server";
-import { StaticRouter } from "react-router";
-import { matchRoutes } from "react-router-config";
-import { HelmetProvider } from "react-helmet-async";
-import { clearChunks, flushChunkNames } from "react-universal-component/server"
-import flushChunks from "webpack-flush-chunks";
-import Routes, { routes } from "../app/Routes";
+import React from 'react'
+import { renderToString } from 'react-dom/server'
+import { StaticRouter } from 'react-router'
+import { matchRoutes } from 'react-router-config'
+import { HelmetProvider } from 'react-helmet-async'
+import { clearChunks, flushChunkNames } from 'react-universal-component/server'
+import flushChunks from 'webpack-flush-chunks'
+import Routes, { routes } from '../app/Routes'
 import { ApolloProvider } from '@apollo/client'
-import UAParser from 'ua-parser-js';
-import GraphClient from '../lib/client';
+import UAParser from 'ua-parser-js'
+import GraphClient from '../lib/client'
 import { getMobile } from './Utils'
-const  parser = new UAParser();
-const client = GraphClient.getGraphClient();
+const parser = new UAParser()
+const client = GraphClient.getGraphClient()
+console.log('CLIENT: ', client)
 
+export default ({ clientStats, outputPath }) =>
+  (req, res) => {
+    const promises = matchRoutes(routes, req.path).map(({ route, match }) => {
+      route.loadData ? route.loadData(match) : null
+    })
 
-export default ({ clientStats , outputPath}) => (req, res) => {
-	const promises = matchRoutes(routes, req.path).map(({ route,match }) => {
-		route.loadData ? route.loadData(match) : null;
-	});
+    var ua = req.headers['user-agent']
+    let isMobile = getMobile(req, ua)
 
-	var ua = req.headers['user-agent'];
-	let isMobile = getMobile(req, ua);
+    Promise.all(promises).then(() => {
+      const context = {}
+      const helmetContext = {}
+      // clearChunks()
+      const app = renderToString(
+        <ApolloProvider client={client}>
+          <HelmetProvider context={helmetContext}>
+            <StaticRouter location={req.originalUrl} context={context}>
+              <Routes isMobile={isMobile} />
+            </StaticRouter>
+          </HelmetProvider>
+        </ApolloProvider>,
+      )
 
-	Promise.all(promises).then(() => {
-		const context = {};
-		const helmetContext = {};
-		// clearChunks()
-		const app = renderToString(
-			<ApolloProvider client={client}>
-				<HelmetProvider context={helmetContext}>
-					<StaticRouter location={req.originalUrl} context={context}>
-						<Routes isMobile={isMobile}/>
-					</StaticRouter>
-				</HelmetProvider>
-			</ApolloProvider>,
-		);
+      const { helmet } = helmetContext
+      const chunkNames = flushChunkNames()
+      const siteName = 'Vidiren'
 
-		
+      const { js, styles, cssHash, scripts, stylesheets, css } = flushChunks(
+        clientStats,
+        {
+          chunkNames,
+          before: ['commonCss', 'vendorCss'],
+          outputPath,
+        },
+      )
 
-		const { helmet } = helmetContext;
-		const chunkNames = flushChunkNames()
-		const siteName = 'Vidiren';
+      const status = context.status || 200
 
-		const { js, styles, cssHash , scripts, stylesheets,css} = flushChunks(clientStats, {
-    
-			chunkNames,
-			before: ['commonCss', 'vendorCss'],
-			outputPath,
-		});
+      if (context.status == 404) {
+        console.log('Error 404: ', req.originalUrl)
+      }
 
-		const status = context.status || 200;
+      if (context.url) {
+        const redirectStatus = context.status || 302
+        res.redirect(redirectStatus, context.url)
+        return
+      }
 
-		if (context.status == 404) {
-			console.log("Error 404: ", req.originalUrl);
-		}
+      console.log('PATH', req.path)
+      console.log('DYNAMIC CHUNK NAMES RENDERED', chunkNames)
+      console.log('SCRIPTS SERVED', scripts)
+      console.log('STYLESHEETS SERVED', stylesheets)
 
-		if (context.url) {
-			const redirectStatus = context.status || 302;
-			res.redirect(redirectStatus, context.url);
-			return;
-		}
-
-		console.log('PATH', req.path)
-		console.log('DYNAMIC CHUNK NAMES RENDERED', chunkNames)
-		console.log('SCRIPTS SERVED', scripts)
-		console.log('STYLESHEETS SERVED', stylesheets)
-
-		res.status(status)
-			.cookie()
-			.header("Content-Type", "text/html; charset=utf-8")
-			.send(
-				`<!DOCTYPE html>
+      res
+        .status(status)
+        .cookie()
+        .header('Content-Type', 'text/html; charset=utf-8')
+        .send(
+          `<!DOCTYPE html>
 					<html lang="en">
 						<head>${helmet.title}${helmet.meta.toString()}${helmet.link.toString()}
 						<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -91,7 +93,11 @@ export default ({ clientStats , outputPath}) => (req, res) => {
 						<meta name="google" content="notranslate"/>
 						<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 						<meta http-equiv="X-UA-Compatible" content="ie=edge">
-						${(process.env.NODE_APP != 'production') ? '<meta name="robots" content="noindex, nofollow" />' : ''}
+						${
+              process.env.NODE_APP != 'production'
+                ? '<meta name="robots" content="noindex, nofollow" />'
+                : ''
+            }
 						${css}
 						<!-- Global site tag (gtag.js) - Google Analytics -->
 						<script async src="https://www.googletagmanager.com/gtag/js?id=G-TWNNJLWGB0"></script>
@@ -106,10 +112,12 @@ export default ({ clientStats , outputPath}) => (req, res) => {
 						<body>
 							<div id="react-root">${app}</div>
 						</body>
-						<script type="text/javascript">window.isMobile=${isMobile};window.__APOLLO_STATE__ = ${JSON.stringify(client.extract())};</script>
+						<script type="text/javascript">window.isMobile=${isMobile};window.__APOLLO_STATE__ = ${JSON.stringify(
+            client.extract(),
+          )};</script>
 						${cssHash}
 						${js}
 				</html>`,
-			);
-	});
-};
+        )
+    })
+  }
