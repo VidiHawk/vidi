@@ -1,0 +1,51 @@
+.v-bethefirst-container {
+  background: #060606;
+  border-radius: 16px;
+  padding: 40px 32px;
+  @media screen and (max-width: 767px) {
+    padding: 22px 0;
+    background: transparent !important;
+  }
+  & h3 {
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: 800;
+  }
+  
+  .v-bethefirst {
+    & > span {
+      margin-bottom: 16px;
+      display: block;
+    }
+  }
+  
+  & input {
+    border: 0;
+    height: 56px;
+    width: 100%;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 1.3;
+    padding: 0 16px;
+    font-family: 'Lato';
+    color: black;
+    transform-origin: 0 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  & button {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .v-bethefirst-thank {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  &--light {
+    background: #F0F1F6;
+  }
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+  <url>
+    <loc>https://vidiren.com/</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://vidiren.com/faqs</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://vidiren.com/blog</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://vidiren.com/contact</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://vidiren.com/terms</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://vidiren.com/privacy</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vidiren.com/blog/focus-more-on-video</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://vidiren.com/blog/landscape-vs-potrait</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://vidiren.com/blog/embedding-youtube-video-not-a-good-idea</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://vidiren.com/blog/how-to-videos-a-growth-driver-for-todays-ecommerce</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://vidiren.com/blog/live-commerce-is-taking-online-commerce-by-storm-in-2021</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://vidiren.com/blog/how-to-produce-videos-that-sell</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://vidiren.com/blog/video-is-king</loc>
+    <lastmod>2021-06-24T06:14:16+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>

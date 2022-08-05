@@ -1,0 +1,90 @@
+@import 'variables';
+
+.v-container--light{
+  .black-svg{
+    path, rect, circle{
+      fill: #F0F1F6;
+    }
+  }
+  .white-svg{
+    path{
+      fill: #191919;
+    }
+  }
+  .grey-svg {
+    path {
+      fill: #fff;
+    }
+  }
+  .ant-checkbox-wrapper.v-checkbox{
+    color: #353536;
+    a{
+      color: #353536;
+    }
+  }
+  .v-demoRequest-container{
+    color: $dark-background-color2;
+    background: $white-back-ground;
+  }
+  .v-contact-container{
+    color: $dark-background-color2;
+    background: $white-back-ground;
+  }
+  .v-comment-form-container{
+    color: $dark-background-color2;
+  }
+  .v-faqs{
+    .v-custom-card {
+      background: $white-back-ground;
+      .ant-card-body {
+        p {
+          color: $dark-background-color2;
+        }
+      }
+    }
+    .faq-wrapper {
+      h5 {
+        color: $dark-background-color2;
+      }
+      .ant-collapse {
+        .ant-collapse-item {
+          border: 3px solid $light-background-color2;
+          background: $white-back-ground;
+          .ant-collapse-header {
+            color: $dark-background-color2;
+          }
+          .ant-collapse-header {
+            span {
+              background: $light-background-color2;
+              color: $light-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //.v-footer-container{
+  //  .v-footer-links{
+  //    a{
+  //      color: #303030;
+  //    }
+  //  }
+  //}
+  .v-navigation{
+    .v-menu__item{
+      color: #060606;
+    }
+    .v-menu__item:not(.v-menu__item--nobg) > a{
+      color: #060606;
+    }
+  }
+  .toast{
+    background: #000;
+    color:#fff;
+    .close-icon, p{
+      color:#fff;
+    }
+  }
+}
+

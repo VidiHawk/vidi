@@ -1,0 +1,42 @@
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "NODE_ENV=development nodemon .",
+    "start-prod": "NODE_ENV=prod nodemon .",
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://personalanshusingh123@bitbucket.org/vidiren/vidiren.com-back-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/vidiren/vidiren.com-back-end#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "apollo-server-express": "^2.19.0",
+    "cryptr": "^6.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.3.0",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.6",
+    "rand-token": "^1.0.1",
+    "redis": "^3.1.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sequelize": "^6.3.5",
+    "sib-api-v3-sdk": "^8.2.0",
+    "string-format": "^2.0.0",
+    "uuid": "^3.3.2"
+  }
+}

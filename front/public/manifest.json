@@ -1,0 +1,19 @@
+{
+    "name": "Vidiren",
+    "short_name": "Vidiren Lite",
+    "theme_color": "#000",
+    "background_color": "#fff",
+    "scope": "/",
+    "icons": [
+     {
+      "src": "\/android-icon-36x36.png",
+      "sizes": "36x36",
+      "type": "image\/png",
+      "density": "0.75"
+     }
+    ],
+    "start_url": "/?mode=standalone&utm_source=pwa",
+    "display": "standalone",
+    "orientation": "portrait",
+    "gcm_sender_id": "277724106736"
+}

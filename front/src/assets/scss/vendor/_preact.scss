@@ -1,0 +1,45 @@
+@keyframes placeHolderShimmer {
+  0% {
+      background-position: -468px 0
+  }
+  100% {
+      background-position: 468px 0
+  }
+}
+
+@-webkit-keyframes placeHolderShimmer{
+ 0% {
+      background-position: -468px 0
+  }
+  100% {
+      background-position: 468px 0
+  }
+}
+
+.anime-bg {
+  animation:1s linear infinite forwards placeHolderShimmer;
+  -webkit-animation: 1s linear infinite forwards placeHolderShimmer;
+  background: #f6f7f8;
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(24%, #dddddd), color-stop(36%, #eeeeee));
+  background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 24%, #eeeeee 36%);
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 24%, #eeeeee 36%);
+  background-size: 800px 104px;
+  height: 51px;
+  position: relative;
+}
+
+.v-container--dark{
+  .anime-bg {
+    animation:1s linear infinite forwards placeHolderShimmer;
+    -webkit-animation: 1s linear infinite forwards placeHolderShimmer;
+    background: #191919;
+    background: #444444;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #444444), color-stop(24%, #726f6f), color-stop(36%, #444444));
+    background: -webkit-linear-gradient(left, #444444 8%, #726f6f 24%, #444444 36%);
+    background: linear-gradient(to right, #444444 8%, #726f6f 24%, #444444 36%);
+    background-size: 800px 104px;
+    height: 51px;
+    position: relative;
+  }
+}

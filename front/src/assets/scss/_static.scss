@@ -1,0 +1,115 @@
+.static-page{
+  .v-svgBg {
+    width: 112%;
+    position: absolute;
+    top: 1vw;
+    @media screen and (max-width: 767px) {
+      top:0;
+    }
+  }
+  .static-section{
+    position: relative;
+    &-title{
+      font-size: 48px;
+      margin-bottom: 0;
+      z-index: 99;
+      text-align: center;
+      top: -2rem;
+      font-weight: bold;
+      font-family: 'Lato';
+      @media screen and (max-width: 767px) {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 140%;
+        margin-top: 15px;
+      }
+    }
+    &-summary {
+      font-size: 20px;
+      text-align: center;
+    }
+    &-content {
+      margin-top: 4rem;
+      position: relative;
+      z-index: 2;
+      .heading{
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: bold;
+        font-family: 'Lato';
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+          line-height: 150%;
+          padding: 0 16px;
+          margin-top: 1rem;
+        }
+      }
+      .content{
+        font-size: 18px;
+        line-height: 24px;
+        font-family: 'Lato';
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+          padding: 0 16px;
+        }
+      }
+    }
+  }
+}
+.v-container {
+  position: relative;
+  .custom-static-svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .custom-static-mobile {
+    display: none;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+  &.v-container--light {
+    @media screen and (max-width: 767px) {
+      .custom-static-mobile {
+        path {
+          &:nth-of-type(1) {
+            fill: #F0F1F6;
+            opacity: 0.8;
+          }
+          &:nth-of-type(2) {
+            fill: #F0F1F6;
+          }
+        }
+      }
+    }
+    .custom-static-svg {
+      path {
+        &:nth-of-type(2) {
+          fill: #F0F1F6;
+          opacity: 0.8;
+        }
+        &:nth-of-type(3) {
+          fill: #F0F1F6;
+        }
+        &:first-child {
+          fill: #F0F1F6 !important;
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+}

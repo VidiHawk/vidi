@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"outDir": "./buildServer/",
+		"allowJs": true,
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"module": "commonjs",
+		"noEmit": true,
+		"target": "es5",
+		"strict": true,
+		"jsx": "react",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"lib": ["es5", "es6", "dom"],
+		"typeRoots": ["types", "node_modules/@types"],
+		"removeComments":false,
+	},
+	"include": [
+		"./src/**/*.tsx",
+		"./src/**/*.ts",
+		"types/**/*" //needed for custom types
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

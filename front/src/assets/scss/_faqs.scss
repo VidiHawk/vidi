@@ -1,0 +1,449 @@
+.v-faqs {
+  button.v-button{
+    padding: 16px 68px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+    padding:0 !important;
+  }
+  .v-header {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 767px) {
+      position: relative;
+      z-index: 1;
+  }
+
+    .btm-space{
+      margin-bottom: 70px;
+      display: block;
+    }
+  }
+  .card-wrapper{
+    padding: 50px;
+  }
+
+ .v-heading {
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  &__title {
+    font-size: 48px;
+    margin: 0;
+  }
+   &__title-small {
+     position: relative;
+     font-size: 48px;
+     margin: auto;
+     width: 60%;
+     span{
+     position: relative;
+     z-index: 1;
+     }
+     &::after{
+       content: "";
+       position: absolute;
+       width: 64px;
+       height: 64px;
+       border-radius: 50%;
+       z-index: 0;
+       top: -10%;
+       right: 2%;
+       background: #90CDA1;
+       z-index: 0;
+       @media screen and (min-width: 768px) and (max-width: 991px){
+        right: -4%;
+       }
+     }
+   }
+  &__sub-title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+ }
+
+.v-custom-card {
+  cursor: pointer;
+  width: 352px;
+  height: 256px;
+  background: #303030;
+  border-radius:24px;
+  border: unset;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &:hover{
+    border:2px solid #FFFFFF;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1024px){
+    width: 240px;
+    height: 240px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px){
+    width: 235px;
+    height: 235px;
+  }
+  .ant-card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-family: 'Lato';
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      margin-top: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.faq-wrapper {
+  margin-bottom: 140px;
+  position: relative;
+  z-index: 1;
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 28px;
+  }
+  .ant-collapse {
+    background: transparent;
+    border: none;
+    .ant-collapse-item {
+      border: 3px solid #303030;
+      border-radius: 16px;
+      background: transparent;
+      margin-bottom: 16px;
+      &-active span svg{
+        transform: rotate(180deg) !important;
+      }
+      .ant-collapse-header {
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        padding: 20px 16px;
+        font-family: 'Lato';
+
+        span {
+          left: unset;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%) rotate(90deg);
+          width: 32px;
+          height: 32px;
+          background: #303030;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+      .ant-collapse-content-active {
+        background: transparent;
+        border: none;
+        .ant-collapse-content-box {
+          p {
+            font-size: 18px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.v-faq-section {
+
+  .v-svgBg {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 40px;
+    z-index: 0;
+    height:auto;
+    @media screen and (max-width: 767px){
+      top: 0;
+    }
+  }
+}
+.v-search {
+  height: 56px;
+  border-radius: 16px;
+  background: #191919;
+  color: white;
+  border: 2px solid #303030;
+  max-width: 350px;
+  & .ant-input-prefix {
+    margin-right: 16px;
+  }
+  & input {
+    color: inherit;
+    font-weight: bold;
+    background: inherit;
+    font-size: 16px;
+    &::placeholder {
+      color: inherit;
+    }
+  }
+  &--light {
+    background: #FFFFFF;
+    border: 2px solid #E8E9EE;
+    color: #9B9B9B;
+  }
+}
+
+}
+@media screen and (max-width: 1219px) {
+  .v-faqs {
+    .card-wrapper {
+      padding: 0 !important;
+      margin:38px 0 0 !important;
+      div {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+      }
+      .custom-card {
+        width: 150px;
+        height: 150px;
+        .ant-card-body {
+          span {
+            font-size: 30px !important;
+          }
+          p {
+            font-size: 14px;
+            margin-top: 7px;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+    .faq-wrapper {
+      padding: 0 16px;
+      margin-bottom: 148px;
+      margin-top: 40px;
+
+      h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        margin-bottom: 28px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+
+  .v-faqs {
+    .v-header {
+      a{
+        margin: 0 16px;
+      }
+
+      button.ant-btn.v-button {
+        width: 90%;
+        font-size: 16px;
+        height: 48px;
+      }
+      .v-heading {
+        margin-bottom: 24px;
+        .mb-text{
+        text-align: left;
+        }
+        .mb-fotn{
+          font-size: 32px;
+          font-family: 'Lato' !important;
+          font-weight: 700;
+        }
+        &__title {
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 140%;
+          padding: 0 30px ;
+        }
+        &__title-small {
+          font-size: 32px;
+          margin: 0 auto 24px;
+          width: 100%;
+          padding: 0 24px;
+          line-height: 150%;
+          text-align: left;
+          &::after{
+            width: 32px;
+            height: 32px;
+            top: 1%;
+            right: 11%;
+          }
+        }
+        &__sub-title {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 156%;
+          padding: 0 24px;
+        }
+        .mb-padd{
+          padding: 0 40px !important;
+        }
+      }
+    }
+    .card-wrapper {
+
+      padding: 0 !important;
+      margin:38px 0 0 !important;
+      div {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+      }
+      .v-custom-card {
+        width: 104px;
+        height: 104px;
+        .ant-card-body {
+          span {
+            font-size: 30px !important;
+          }
+          p {
+            font-size: 14px;
+            margin-top: 7px;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+    .faq-wrapper {
+      padding: 0 16px;
+      margin-top: 24px;
+      .ant-collapse {
+        .ant-collapse-item {
+          .ant-collapse-header {
+            font-size: 16px;
+            padding: 20px 50px 16px 16px !important;
+          }
+          .ant-collapse-content-box{
+            p{
+              font-size: 14px !important;
+              line-height: 170%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .v-faqs {
+    .card-wrapper{
+      .v-custom-card{
+        width: 85px;
+        height:85px;
+      }
+    }
+    .v-search{
+      max-width: 280px !important;
+    }
+    .v-header {
+      .v-heading__title-small {
+      font-size:28px;
+        text-align:left;
+        &::after{
+          top: -6%;
+          right: 7%;
+        }
+      }
+      .v-heading__sub-title{
+        font-size:15px;
+      }
+    }
+    .ant-card-body {
+      padding: 20px;
+    }
+  }
+}
+.v-container {
+  position: relative;
+  .custom-faq {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    display: flex;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .custom-mobile-faq {
+    display: none;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      z-index: 0;
+      width: 100%;
+    }
+  }
+  .v-faqs {
+    @media screen and (max-width: 767px) {
+      position: relative;
+    }
+  }
+  &.v-container--dark{
+    .ant-collapse-content{
+      background-color: #191919 !important;
+      border-radius: 20px;
+    }
+  }
+  &.v-container--light {
+    .v-custom-card {
+      &:hover{
+        border:2px solid #000;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .custom-mobile-faq {
+        path {
+          &:nth-of-type(1) {
+            fill: #F0F1F6 !important;
+            opacity: 0.4;
+          }
+          &:nth-of-type(2) {
+            fill: #F0F1F6;
+          }
+        }
+      }
+    }
+    .custom-faq {
+
+      path {
+        &:nth-of-type(2) {
+          fill: #F0F1F6;
+          opacity: 0.8;
+        }
+        &:nth-of-type(3) {
+          fill: #F0F1F6;
+        }
+        &:first-child {
+          fill: #F0F1F6 !important;
+          opacity: 0.4;
+        }
+      }
+    }
+
+  }
+}

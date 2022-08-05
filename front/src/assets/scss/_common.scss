@@ -1,0 +1,62 @@
+.ant-btn.v-button {
+  background: linear-gradient(181.36deg, #ffe713 1.15%, #efac47 105.82%);
+  border-radius: 16px;
+  border: 0;
+  height: 42px;
+  padding: 4px 27px;
+  color: $dark-background-color2;
+  transition: background 1s linear;
+  font-weight: 700;
+  &:hover, &:focus {
+    background: linear-gradient(181.36deg, #EFAC47 1.15%, #FFE713 105.82%);
+    color: $dark-background-color2;
+  }
+}
+
+.ant-checkbox-wrapper.v-checkbox {
+  color: white;
+  display: flex;
+  & .ant-checkbox {
+    top: 5px;
+  }
+  & a {
+    color: white;
+    text-decoration: underline;
+  }
+  &--light {
+    color: black;
+    & a {
+      color: black;
+    }
+  }
+}
+
+.v-container {
+  min-height: 100%;
+  font-family: 'Lato';
+  overflow: hidden;
+  &--dark {
+    color: white;
+    background-color: $dark-background-color;
+    h1, h2, h3, p, h4, .v-email-message {
+      color: white;
+    }
+    .v-navigation{
+      background-color: #060606;
+    }
+  }
+  &--light {
+    background-color: $light-background-color;
+    .v-navigation{
+      background-color: #F0F1F6;
+    }
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
