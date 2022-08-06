@@ -48,13 +48,13 @@ const CardContentList = (props: any) => {
 			<h2>Frequently Asked Questions</h2>
 			<Collapse defaultActiveKey={['1']}>
 				{props.faqs.map((faq: any, index: number) => <Panel key={index+1} header={faq.question}>
-							<div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-								<h3 itemProp="name" style={{display: 'none'}}>{faq.question}</h3>
-								<div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-									<p itemProp="text">{faq.ans}</p>
-								</div>
-							</div>
-						</Panel>)}
+					<div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+						<h3 itemProp="name" style={{display: 'none'}}>{faq.question}</h3>
+						<div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+							<p itemProp="text">{faq.ans}</p>
+						</div>
+					</div>
+				</Panel>)}
 			</Collapse>
 		</div>
 			)

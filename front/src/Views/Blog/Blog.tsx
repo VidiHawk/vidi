@@ -104,7 +104,7 @@ const HeroItem = (props:HeroSectionI) => {
 					<div className="v-hero-item__desc">
 						<span className="v-hero-item__desc__category">{props.heroPost && props.heroPost.category}</span>
 						<Link to={{ pathname: `blog/${props?.heroPost?.slug}`}}>
-              <h2></h2>
+							<h2></h2>
 							<h3 className="v-hero-item__desc__title">{props.heroPost && props.heroPost.title}</h3>
 						</Link>
 						{props.heroPost?.published_at && <div className="v-hero-item-publish">
@@ -198,7 +198,7 @@ const NewsLetter = (props:any) => {
 					<Row>
 						<Col xs={{ span: 24, offset: 0, order: 1 }} lg={{ span: 11, offset: 1, order: 1  }}>
 							<div className="v-title">
-                <h2></h2>
+								<h2></h2>
 								<h3><span>Be the first to learn <br />about our new features</span></h3>
 								<span	className="v-unic-fontset">
 									Receive behind-the-scene news on our innovations, and tips on building stunning video commerce sites

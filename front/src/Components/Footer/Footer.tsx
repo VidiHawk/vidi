@@ -46,18 +46,18 @@ function Footer({ className }: FooterProps) {
 							<Col xs={{ span: 23, offset: 0 }} sm={{ span: 10, offset: 0 }} lg={{ span: 8, offset: 0 }} xl={{ span: 6, offset: 0 }} className="footer-option">
 								<address className="footer-address">
 									<b>Vidi Rendering Technologies</b>
-                  <div className="space"></div>
-									663 Clear Water Bay road<br />
-									Hong Kong
-                  <div className="space"></div>
-									8383 Wilshire Blvd<br />
-									Los Angeles 90211 California
+									<div className="space"></div>
+									Avenue Louise 54 | Brussels
+									<div className="space"></div>
+									663 Clear Water Bay road | Hong Kong
+									<div className="space"></div>
+									8383 Wilshire Blvd | Los Angeles 90211 California
 								</address>
 							</Col>
 						</Row>
 						<Row gutter={{ lg: 24 }}>
 							<Col xs={{ span: 12, offset: 0 }} md={{ span: 7 }} lg={{ span: 6, offset: 0 }} className="footer-option-link">
-								© 2021 Vidiren
+								© 2022 Vidi Rendering Technologies
 							</Col>
 							<Col xs={{ span: 12, offset: 0 }} lg={{ span: 6, offset: 0 }} className="footer-option-link">
 								<div className="v-footer-social-links">

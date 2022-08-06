@@ -139,10 +139,10 @@ const HeroItem = (props: PostI) => {
 			<Col sm={20} xs={24}>
 				<div className="v-hero-item">
 					<div className="v-hero-item__image">
-            <div className={`${dynamicClass}`}>
-					  	<img className={`${props?.post?.slug}`} src={props.post && props.post.img_src ? props.post.img_src : '../images/blog/hero-post.jpg"'}
-							alt={`${props?.post?.meta_title}`} width="100%" />
-            </div>
+						<div className={`${dynamicClass}`}>
+							<img className={`${props?.post?.slug}`} src={props.post && props.post.img_src ? props.post.img_src : '../images/blog/hero-post.jpg"'}
+								alt={`${props?.post?.meta_title}`} width="100%" />
+						</div>
 					</div>
 					{props?.post?.published_at && <div className="v-hero-item-publish">
 						<p><i>Published on {moment(+props?.post?.published_at).format('MMMM Do, YYYY')}</i></p>

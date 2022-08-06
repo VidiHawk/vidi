@@ -16,3 +16,7 @@ Run production:
 
 Before deploying to server, change the url in the following file:
 back/setting/setting.dev.js
+
+## MySQL
+
+mysql -u root -p'password' -P 3306 -h ip_address

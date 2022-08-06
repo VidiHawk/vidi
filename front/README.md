@@ -1,5 +1,10 @@
 # vidiren.com
 
+## Next Steps
+
+vidicommerce.com
+
+
 ## Project set up 
 
 Install npm erbium:
@@ -13,7 +18,6 @@ Install:
 
 Run production:
 `npm run prod`
-
 
 # Brand Guide.
 
