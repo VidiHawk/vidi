@@ -57,7 +57,7 @@ function Footer({ className }: FooterProps) {
 						</Row>
 						<Row gutter={{ lg: 24 }}>
 							<Col xs={{ span: 12, offset: 0 }} md={{ span: 7 }} lg={{ span: 6, offset: 0 }} className="footer-option-link">
-								© 2022 Vidi Rendering Technologies
+								© {new Date().getFullYear()} Vidi Rendering Technologies
 							</Col>
 							<Col xs={{ span: 12, offset: 0 }} lg={{ span: 6, offset: 0 }} className="footer-option-link">
 								<div className="v-footer-social-links">

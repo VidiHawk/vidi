@@ -124,41 +124,41 @@ const Home = React.memo((props:HomePageI) => {
 	<>
 		<Head title="Video Commerce Website | Full Video Shopping | Vidiren" description="Vidiren is the first video commerce website builder in the world. Create all-video commerce website that are mobile friendly and customer-centric."></Head>
 		<div className="v-home">
-      {contactsubmitted ?
-        <>
-          <ConfirmationMessage/>
-          <ContactUsConfirmationSvg style={{ fill: svgIconsColor }} className="conformation-custom-svg black-svg"/>
-          <ContactUsBottomMobileSvg className="custom-mobile black-svg"/>
-        </> :
-        <>
-          <HeroSection
-            playVideo={playVideo}
-            video1Ref={video1Ref}
-            saveNewsletter={saveNewsletter}
-            submitted={submitted}
-            svgIconsColor={svgIconsColor}
+			{contactsubmitted ?
+				<>
+					<ConfirmationMessage/>
+					<ContactUsConfirmationSvg style={{ fill: svgIconsColor }} className="conformation-custom-svg black-svg"/>
+					<ContactUsBottomMobileSvg className="custom-mobile black-svg"/>
+				</> :
+				<>
+					<HeroSection
+						playVideo={playVideo}
+						video1Ref={video1Ref}
+						saveNewsletter={saveNewsletter}
+						submitted={submitted}
+						svgIconsColor={svgIconsColor}
           />
-          <StunningVideo
-            {...props}
-            playVideo={playVideo}
-            video2Ref={video2Ref}
-            svgBgColor={svgBgColor}
-            svgIconsColor={svgIconsColor}
+					<StunningVideo
+						{...props}
+						playVideo={playVideo}
+						video2Ref={video2Ref}
+						svgBgColor={svgBgColor}
+						svgIconsColor={svgIconsColor}
           />
-          <ShoppingSection
-            {...props}
-            playVideo={playVideo}
-            video3Ref={video3Ref}
-            svgBgColor={svgBgColor}
-            svgIconsColor={svgIconsColor}
+					<ShoppingSection
+						{...props}
+						playVideo={playVideo}
+						video3Ref={video3Ref}
+						svgBgColor={svgBgColor}
+						svgIconsColor={svgIconsColor}
           />
-          <UniteBrand {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor}/>
-          <ResponsiveCommerce {...props} video4Ref={video4Ref} video5Ref={video5Ref} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor}
-                              playVideo={playVideo} theme={themeDark}/>
-          <AdminSection {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor} theme={themeDark}/>
-          <BottomSection {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor}
-                         contactsubmitted={contactsubmitted} submitContactForm={submitContactForm}/>
-        </>}
+					<UniteBrand {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor}/>
+					<ResponsiveCommerce {...props} video4Ref={video4Ref} video5Ref={video5Ref} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor}
+						playVideo={playVideo} theme={themeDark}/>
+					<AdminSection {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor} theme={themeDark}/>
+					<BottomSection {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor}
+						contactsubmitted={contactsubmitted} submitContactForm={submitContactForm}/>
+				</>}
 		</div>
 	</>
   )

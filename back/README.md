@@ -19,4 +19,18 @@ back/setting/setting.dev.js
 
 ## MySQL
 
-mysql -u root -p'password' -P 3306 -h ip_address
+`mysql -u root -p'password' -P 3306 -h ip_address`
+
+to edit MySQL from the workbench follow these steps:
+
+1. install the workbench
+
+`sudo snap install mysql-workbench-community`
+
+2. run the following command to enable password management
+
+`sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service`
+
+3. Launch the workbench
+   
+`mysql-workbench-community`
