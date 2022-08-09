@@ -5,21 +5,20 @@ let IMG_END_POINT = ''
 let PRODUCTION = true
 let SERVICE_WORKER = process.env.SERVICE_WORKER
 
-switch(process.env.NODE_ENV){
-	case 'production':
-		BASE_URL = 'https://vidiren.com';
-		API_BASE_URL = 'https://vidiren.com/graphql';
-		IMG_END_POINT= '';		
-		PORT = 5001
-		PRODUCTION = true;
-	break;
-	default:
-		BASE_URL = 'http://localhost:3003';
-		API_BASE_URL = 'http://localhost:4000/graphql';
-		IMG_END_POINT= '';
-		PORT = 3003
-		PRODUCTION = false;
-
+switch (process.env.NODE_ENV) {
+  case 'production':
+    BASE_URL = 'https://vidiswift.com'
+    API_BASE_URL = 'https://vidiswift.com/graphql'
+    IMG_END_POINT = ''
+    PORT = 5001
+    PRODUCTION = true
+    break
+  default:
+    BASE_URL = 'http://localhost:3003'
+    API_BASE_URL = 'http://localhost:4000/graphql'
+    IMG_END_POINT = ''
+    PORT = 3003
+    PRODUCTION = false
 }
 
 let config = {

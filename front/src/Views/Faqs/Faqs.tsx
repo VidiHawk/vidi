@@ -110,7 +110,7 @@ const FrequentQuestions = (props: any) => {
 				<Col>
 					<div className="v-header">
 						<div className="v-heading">
-							<h1 className="v-heading__title-small"><span>Do not you find what you are looking for?</span></h1>
+							<h1 className="v-heading__title-small"><span>Not finding what you are looking for?</span></h1>
 							<p className="v-heading__sub-title">Get in touch with us and we will help you</p>
 						</div>
 						<Link to="/contact" title="Contact Vidiren">
