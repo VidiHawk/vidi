@@ -7,7 +7,7 @@ let SERVICE_WORKER = process.env.SERVICE_WORKER
 
 switch (process.env.NODE_ENV) {
   case 'production':
-    BASE_URL = 'https://vidiswift.com'
+    BASE_URL = 'https://vidiswift.com/video-commerce'
     API_BASE_URL = 'https://vidiswift.com/graphql'
     IMG_END_POINT = ''
     PORT = 5001
