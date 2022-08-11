@@ -1,19 +1,15 @@
 {
   "name": "apis",
   "version": "1.0.0",
-  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "NODE_ENV=development nodemon .",
-    "start-prod": "NODE_ENV=prod nodemon .",
+    "dev": "NODE_ENV=development nodemon .",
+    "prod": "NODE_ENV=prod nodemon .",
     "test": "eslint ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://personalanshusingh123@bitbucket.org/vidiren/vidiren.com-back-end.git"
-  },
   "keywords": [],
-  "author": "",
+  "author": "Vidi Rendering Technologies",
   "license": "ISC",
   "homepage": "https://bitbucket.org/vidiren/vidiren.com-back-end#readme",
   "devDependencies": {
