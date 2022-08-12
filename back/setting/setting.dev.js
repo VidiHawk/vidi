@@ -15,7 +15,7 @@ const settings = {
       HOST: process.env["REDIS:HOST"],
       PASSWORD: process.env["REDIS:PASSWORD"],
     },
-    // "WEBSITE_HOST_URL": "https://www.vidiren.com"
+    // "WEBSITE_HOST_URL": "https://www.vidicommerce.com"
     WEBSITE_HOST_URL: "http://localhost:3003/",
   },
 };
