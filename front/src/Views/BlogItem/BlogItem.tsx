@@ -92,7 +92,7 @@ const BlogItem = (props: any) => {
   if (loading) return (<Loading />)
   return (
 	<>
-		{blogData && <Head {...metaData} url={`https://vidiren.com/blog/${slug}`} />}
+		{blogData && <Head {...metaData} url={`https://vidicommerce.com/blog/${slug}`} />}
 		<div className="v-blog v-blog-item">
 			<Header {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor} post={blogData} />
 			{blogData && <HeroItem post={blogData} />}

@@ -128,7 +128,7 @@
       background: transparent;
       margin-bottom: 16px;
       &-active span svg{
-        transform: rotate(180deg) !important;
+        transform: rotate(90deg) !important;
       }
       .ant-collapse-header {
         font-size: 20px;
@@ -141,13 +141,13 @@
           left: unset;
           right: 20px;
           top: 50%;
-          transform: translateY(-50%) rotate(90deg);
-          width: 32px;
-          height: 32px;
+        //   transform: translateY(-50%) rotate(90deg);
+          // width: 32px;
+          // height: 32px;
           background: #303030;
           border-radius: 50%;
           display: flex;
-          justify-content: center;
+          justify-content: left;
           align-items: center;
           svg {
             width: 16px;

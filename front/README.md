@@ -1,9 +1,9 @@
-# vidiren.com
+# vidicommerce.com
 
 ## Next Steps
 
 vidicommerce.com
-
+add "about us links"
 
 ## Project set up 
 

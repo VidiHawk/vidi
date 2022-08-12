@@ -30,8 +30,8 @@ const Faqs =(props:any) =>{
 	<>
 		<Head
 			htmlProps={htmlProps}
-			title="Video Website Builder | Mobile-first Video Shopping | Vidiren"
-			description="Discover what you need to know about Vidiren. Check out the frequently asked questions about mobile-first video commerce websites platform." url="https://vidiren.com/blog"/>
+			title="Video Website Builder | Mobile-first Video Shopping | Vidi Commerce"
+			description="Discover what you need to know about Vidi Commerce. Check out the frequently asked questions about mobile-first video commerce websites platform." url="https://vidicommerce.com/blog"/>
 		<div className="v-faqs">
 			<HeaderSection {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor} themeDark={themeDark}/>
 			<CardContent svgBgColor={svgBgColor} svgIconsColor={svgIconsColor} themeDark={themeDark} />
@@ -54,7 +54,7 @@ const CardContentList = (props: any) => {
 							<p itemProp="text">{faq.ans}</p>
 						</div>
 					</div>
-				</Panel>)}
+				</Panel>)} 
 			</Collapse>
 		</div>
 			)
@@ -113,7 +113,7 @@ const FrequentQuestions = (props: any) => {
 							<h1 className="v-heading__title-small"><span>Not finding what you are looking for?</span></h1>
 							<p className="v-heading__sub-title">Get in touch with us and we will help you</p>
 						</div>
-						<Link to="/contact" title="Contact Vidiren">
+						<Link to="/contact" title="Contact Vidi Commerce">
 							<VButton>Contact Us</VButton>
 						</Link>
 					</div>
@@ -135,7 +135,7 @@ const HeaderSection = (props:any) => {
 				<div className="v-header">
 					<div className="v-heading">
 						<h1 className="v-heading__title mb-fotn">How can we help you?</h1>
-						<p className="v-heading__sub-title mb-padd">Find out what you need to know about Vidiren</p>
+						<p className="v-heading__sub-title mb-padd">Find out what you need to know about Vidi Commerce</p>
 					</div>
 					{/*<Input prefix={searchIcon} className={searchClass} placeholder="Search" />*/}
 				</div>

@@ -65,7 +65,7 @@ function HeroSection (props: HeroSectionI) {
 							<Form name="v-request-demo" onFinish={onFinish} autoComplete="off">
 								<h2>Discover the first video commerce website builder in the world</h2>
 								<h3>
-									Vidiren is a platform for brands to easily build mobile-first, customer-centric, all-video ecommerce
+									Vidi Commerce is a platform for brands to easily build mobile-first, customer-centric, all-video ecommerce
 									websites
 								</h3>
 								<div className="v-enter-email">
@@ -90,7 +90,7 @@ function HeroSection (props: HeroSectionI) {
 									className="ageement-check"
                   >
 									<VCheckbox>
-										I have read and agree to the <Link to="/privacy" title="Vidiren User Privacy Policy">Privacy Policy</Link> <br /> & <Link to="/terms" title="Vidiren Terms of Use">Terms of service</Link>
+										I have read and agree to the <Link to="/privacy" title="Vidi Commerce User Privacy Policy">Privacy Policy</Link> <br /> & <Link to="/terms" title="Vidi Commerce Terms of Use">Terms of service</Link>
 									</VCheckbox>
 								</Form.Item>
 							</Form>

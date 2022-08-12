@@ -28,10 +28,10 @@ interface HeadProps {
 
 function Head({
   htmlProps= '',
-  url = "https://vidiren.com/",
-  title = "Vidiren Official Website | Create a Video Commerce Website",
+  url = "https://vidicommerce.com/",
+  title = "Vidi Commerce Official Website | Create a Video Commerce Website",
   keywords= "video website builder, how to create a video commerce website, tell your brand story through videos, start a live-streaming session on your ecommerce site, unite your brand community on your own site, fully customizable video ecommerce web-builder, sell more products with videos, mobile-first video shopping, best video commerce builder 2021",
-  description = "Vidiren has launched its video commerce website builder. Try it out for free and start building a mobile-first ecommerce site populated with full screen videos. Tell your brand story through videos and host live streaming sessions to sell your products from your website.",
+  description = "Vidi Commerce has launched its video commerce website builder. Try it out for free and start building a mobile-first ecommerce site populated with full screen videos. Tell your brand story through videos and host live streaming sessions to sell your products from your website.",
   lang = "en-us",
   themecolor = "#000000",
   ogImage = "images/ogImage.jpg",

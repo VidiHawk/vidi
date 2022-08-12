@@ -73,7 +73,7 @@ const Nav = withRouter((props)=>{
 			<>
 				<div className={`v-navigation ${isOpen ? 'isOpen': ''} ${isHeaderChange}`} id="topNav">
 					<div className="v-navinner">
-						<Link to="/" title="Vidiren Official Website" className="v-logo" onClick={()=>closeMenu()}>
+						<Link to="/" title="Vidi Commerce Official Website" className="v-logo" onClick={()=>closeMenu()}>
 							{themeDark ? <DarkThemeLogo /> : <LightThemeLogo />}
 						</Link>
 						{!isOpen && <div className="v-nav-hamburger" onClick={openMenu}>
@@ -95,7 +95,7 @@ const Nav = withRouter((props)=>{
 										</span>
 									</li>
 									<li className="v-menu__item v-menu__item--nobg">
-										<Link to="/contact" title="Contact Vidiren">
+										<Link to="/contact" title="Contact Vidi Commerce">
 											<VButton>Contact Us</VButton>
 										</Link>
 									</li>

@@ -47,7 +47,7 @@ const Blog =(props:any) =>{
 
   return (
 	<>
-		<Head title="First Video Commerce | Video Content Marketing | Vidiren Blog" description="Check the latest blogs about video ecommerce and online marketing. The trend in digital media has been shifting towards video content." url="https://vidiren.com/blog"/>
+		<Head title="First Video Commerce | Video Content Marketing | Vidi Commerce Blog" description="Check the latest blogs about video ecommerce and online marketing. The trend in digital media has been shifting towards video content." url="https://vidicommerce.com/blog"/>
 		<div className="v-blog">
 			<HeaderSection {...props} svgBgColor={svgBgColor} svgIconsColor={svgIconsColor} onSearch={onSearch} themeDark={themeDark}/>
 			{heroPostData && <HeroItem heroPost={heroPostData} {...props}/>}

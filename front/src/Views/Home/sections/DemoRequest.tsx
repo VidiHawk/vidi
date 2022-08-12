@@ -111,12 +111,12 @@ const DemoRequest = (props:any) => {
               ]}
             >
 						<VCheckbox>
-							I have read and agree to the <Link to="/privacy" title="Vidiren User Privacy Policy">Privacy Policy</Link> & <Link to="/terms" title="Vidiren Terms of Use">Terms of service</Link>
+							I have read and agree to the <Link to="/privacy" title="Vidi Commerce User Privacy Policy">Privacy Policy</Link> & <Link to="/terms" title="Vidi Commerce Terms of Use">Terms of service</Link>
 						</VCheckbox>
 					</Form.Item>
 					<Form.Item name="newsletter">
 						<VCheckbox>
-							Sign me up to the Vidiren newsletter (I can unsubscribe anytime). More on this in our <Link to="/privacy" title="Vidiren User Privacy Policy">Privacy Policy</Link>
+							Sign me up to the Vidi Commerce newsletter (I can unsubscribe anytime). More on this in our <Link to="/privacy" title="Vidi Commerce User Privacy Policy">Privacy Policy</Link>
 						</VCheckbox>
 					</Form.Item>
 				</Col>

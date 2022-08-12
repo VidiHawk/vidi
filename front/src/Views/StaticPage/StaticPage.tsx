@@ -20,12 +20,12 @@ const StaticPage = React.memo(function StaticPage(props:any) {
 
   if (loading) return <StaticPageBG />
 
-  let head = <Head title={`Vidiren ${page}`} url={`https://vidiren.com/${page}`}/>;
+  let head = <Head title={`Vidi Commerce ${page}`} url={`https://vidicommerce.com/${page}`}/>;
 
   if (page === 'terms') {
-    head = <Head title="Terms | Create a Video Commerce Website | Vidiren" description="Learn about the Vidiren Terms of Use. This document contains important information about content types, copyright info, and permitted uses of our platform." url={`https://vidiren.com/${page}`}/>;
+    head = <Head title="Terms | Create a Video Commerce Website | Vidi Commerce" description="Learn about the Vidi Commerce Terms of Use. This document contains important information about content types, copyright info, and permitted uses of our platform." url={`https://vidicommerce.com/${page}`}/>;
   } else if (page === 'privacy') {
-    head = <Head title="Privacy | Best video commerce builder 2021 | Vidiren" description="Learn about the Vidi Rendering Technologies Privacy Policy. This document contains the rules which govern how we collect and use subscriber data." url={`https://vidiren.com/${page}`}/>;
+    head = <Head title="Privacy | Best video commerce builder 2021 | Vidi Commerce" description="Learn about the Vidi Rendering Technologies Privacy Policy. This document contains the rules which govern how we collect and use subscriber data." url={`https://vidicommerce.com/${page}`}/>;
   }
 
   if (data && data.html) {

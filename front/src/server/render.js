@@ -39,7 +39,7 @@ export default ({ clientStats, outputPath }) =>
 
       const { helmet } = helmetContext
       const chunkNames = flushChunkNames()
-      const siteName = 'Vidiren'
+      const siteName = 'Vidi Commerce'
 
       const { js, styles, cssHash, scripts, stylesheets, css } = flushChunks(
         clientStats,
@@ -84,7 +84,7 @@ export default ({ clientStats, outputPath }) =>
 						<meta property="og:site_name" content="${siteName}"/>
 						<meta name="twitter:card" content="summary_large_image"/>
 						<meta property="og:type" content="website"/>
-						<meta name="copyright" content="© 2009 - 2022, VIDIREN, ALL RIGHTS RESERVED"/>
+						<meta name="copyright" content="© 2009 - 2022, VIDI RENDERING TECHNOLOGIES, ALL RIGHTS RESERVED"/>
 						<meta name="mobile-web-app-capable" content="yes"/>
 						<meta name="apple-mobile-web-app-capable" content="yes"/>
 						<meta name="apple-mobile-web-app-status-bar-style" content="white"/>

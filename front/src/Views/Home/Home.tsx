@@ -122,7 +122,7 @@ const Home = React.memo((props:HomePageI) => {
 
   return (
 	<>
-		<Head title="Video Commerce Website | Full Video Shopping | Vidiren" description="Vidiren is the first video commerce website builder in the world. Create all-video commerce website that are mobile friendly and customer-centric."></Head>
+		<Head title="Video Commerce Website | Full Video Shopping | Vidi Commerce" description="Vidi Commerce is the first video commerce website builder in the world. Create all-video commerce website that are mobile friendly and customer-centric."></Head>
 		<div className="v-home">
 			{contactsubmitted ?
 				<>

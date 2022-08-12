@@ -25,19 +25,19 @@ function Footer({ className }: FooterProps) {
 						<Row gutter={{ lg: 24 }}>
 							<Col xs={{ span: 23, offset: 0 }} sm={{ span: 7, offset: 0 }} lg={{ span: 6, offset: 0 }} xl={{ span: 6, offset: 0 }} className="footer-option">
 								<div className="v-footer-links">
-									<Link to="/faqs" title="Vidiren Frequent Questions">Frequent Questions</Link>
-									<Link to="/blog" title="Vidiren Blog">Blog</Link>
-									<Link to="/contact" title="Vidiren Terms of Use">
+									<Link to="/faqs" title="Vidi Commerce Frequent Questions">Frequent Questions</Link>
+									<Link to="/blog" title="Vidi Commerce Blog">Blog</Link>
+									<Link to="/contact" title="Vidi Commerce Terms of Use">
 										Contact
 									</Link>
 								</div>
 							</Col>
 							<Col xs={{ span: 23, offset: 0 }} sm={{ span: 7, offset: 0 }} lg={{ span: 6, offset: 0 }} xl={{ span: 6, offset: 0 }} className="footer-option">
 								<div className="v-footer-links">
-									<Link to="/terms" onClick={() => linkClicked()} title="Vidiren Terms of Use">
+									<Link to="/terms" onClick={() => linkClicked()} title="Vidi Commerce Terms of Use">
 										Terms of Service
 									</Link>
-									<Link to="/privacy" onClick={() => linkClicked()} title="Vidiren User Privacy Policy">
+									<Link to="/privacy" onClick={() => linkClicked()} title="Vidi Commerce User Privacy Policy">
 										Privacy Policy
 									</Link>
 								</div>
