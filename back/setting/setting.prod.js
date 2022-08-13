@@ -15,7 +15,7 @@ const settings = {
       HOST: process.env["REDIS:HOST"],
       PASSWORD: process.env["REDIS:PASSWORD"],
     },
-    WEBSITE_HOST_URL: "https://www.vidiswift.com/video-commerce",
+    WEBSITE_HOST_URL: "https://www.vidicommerce.com",
   },
 };
 

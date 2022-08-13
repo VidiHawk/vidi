@@ -82,6 +82,8 @@ const Nav = withRouter((props)=>{
 						<div className="animate-menu d-none" id="animate-menu">
 							<nav className={`v-nav ${isOpen ? 'isOpen': ''}`} onClick={handleClick}>
 								<ul className={`v-menu v-menu--${themLabel.toLowerCase()}`}>
+									
+									<a className="v-menu__item" href="https://www.vidiren.com/">About Us</a>								
 									<li className={`v-menu__item ${activePage === 'faqs' && 'active'}`}>
 										<Link to="/faqs">FAQ</Link>
 									</li>

@@ -40,6 +40,10 @@ function Footer({ className }: FooterProps) {
 									<Link to="/privacy" onClick={() => linkClicked()} title="Vidi Commerce User Privacy Policy">
 										Privacy Policy
 									</Link>
+									{/* <Link to="https://www.vidiren.com/" title="Vidiren Official Website">
+										About Us
+									</Link> */}
+									<a href="https://www.vidiren.com/">About Us</a>
 								</div>
 
 							</Col>
